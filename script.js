@@ -1,33 +1,9 @@
-var audio = audio_mk;
+var audio = ost_mk;
 audio.volume = 0.1;
+
 
 var hp_atual_scorp = 100;
 var hp_atual_sub = 100;
-
-function outline() {
-    id_img_but.style.boxShadow = "0 0 20px red"
-}
-
-function noOutline() {
-    id_img_but.style.boxShadow = "none"
-}
-
-function outline_soco1() {
-    button_soco1.style.boxShadow = "0 0 20px red"
-}
-
-function noOutline_soco1() {
-    button_soco1.style.boxShadow = "0 0 30px black"
-}
-
-function outline_soco2() {
-    button_soco2.style.boxShadow = "0 0 20px red"
-}
-
-function noOutline_soco2() {
-    button_soco2.style.boxShadow = "0 0 30px black"
-}
-
 
 function iniciar() {
     id_img_but.style.boxShadow = "0 0 20px black"
@@ -44,7 +20,7 @@ function iniciar() {
     hp_sub.style.borderStyle = "solid"
     button_soco1.style.opacity = "1"
     button_soco2.style.opacity = "1"
-    audio_mk.play()
+    audio.play();
 }
 
 function soco1() {
@@ -55,11 +31,14 @@ function soco1() {
             main.innerHTML = `Scorpion Wins!<br><b style = "color: red">Flawless Victory</b>`
             div1.style.opacity = "0";
             div2.style.opacity = "0";
+            audio.pause();
     }
         else {
             main.innerHTML = `Scorpion Wins!<br>`
             div1.style.opacity = "0";
-            div2.style.opacity = "0";}}
+            div2.style.opacity = "0";
+            audio.pause();
+            scorpWins.play();}}
 }
 
 function soco2() {
@@ -70,10 +49,13 @@ function soco2() {
             main.innerHTML = `Subzero Wins!<br><b style = "color: red">Flawless Victory</b>`
             div1.style.opacity = "0";
             div2.style.opacity = "0";
+            ost_mk.pause();
     }
         else {
             main.innerHTML = `Subzero Wins!<br>`
             div1.style.opacity = "0";
-            div2.style.opacity = "0";}}
+            div2.style.opacity = "0";
+            ost_mk.pause();
+            subWins.play();}}         
 }
 
