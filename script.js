@@ -1,5 +1,8 @@
-var audio = audio_mk
+var audio = audio_mk;
 audio.volume = 0.1;
+
+var hp_atual_scorp = 100;
+var hp_atual_sub = 100;
 
 function outline() {
     id_img_but.style.boxShadow = "0 0 20px red"
@@ -42,5 +45,35 @@ function iniciar() {
     button_soco1.style.opacity = "1"
     button_soco2.style.opacity = "1"
     audio_mk.play()
+}
+
+function soco1() {
+    hp_atual_sub -= 10;
+    vida_sub.style.width = hp_atual_sub + "%"
+    if (hp_atual_sub < 1){
+        if (hp_atual_scorp == 100){
+            main.innerHTML = `Scorpion Wins!<br><b style = "color: red">Flawless Victory</b>`
+            div1.style.opacity = "0";
+            div2.style.opacity = "0";
+    }
+        else {
+            main.innerHTML = `Scorpion Wins!<br>`
+            div1.style.opacity = "0";
+            div2.style.opacity = "0";}}
+}
+
+function soco2() {
+    hp_atual_scorp -= 10;
+    vida_scorp.style.width = hp_atual_scorp + "%"
+    if (hp_atual_scorp < 1){
+        if (hp_atual_sub == 100){
+            main.innerHTML = `Subzero Wins!<br><b style = "color: red">Flawless Victory</b>`
+            div1.style.opacity = "0";
+            div2.style.opacity = "0";
+    }
+        else {
+            main.innerHTML = `Subzero Wins!<br>`
+            div1.style.opacity = "0";
+            div2.style.opacity = "0";}}
 }
 
