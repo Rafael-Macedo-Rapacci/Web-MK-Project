@@ -23,7 +23,7 @@ body{
 
 .text_button {
     font-family: 'Cinzel';
-    font-size: 32px;
+    font-size: 4vh;
     color: white;
     font-weight: 700;
     text-shadow: 3px 3px black;
@@ -57,7 +57,7 @@ body{
     opacity: 0;
     font-family: 'Cinzel';
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2vh;
     text-shadow: 1px 1px 2px black;
     transition: 0.3s ease;
     cursor: pointer;
