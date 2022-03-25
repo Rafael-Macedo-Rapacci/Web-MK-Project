@@ -5,7 +5,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     border: 0;
-    background-image: url("Arena.jpg");
+    background-image: url("./Media/Images/Arena.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;

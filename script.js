@@ -26,8 +26,8 @@ function iniciar() {
 function soco1() {
     hp_atual_sub -= 10;
     vida_sub.style.width = hp_atual_sub + "%";
-    img_scorp.src = "scorpion-mortalkombat-fan-remake-punch.gif";
-    setTimeout(() => {img_scorp.src = "scorpion-mk-hd-sprite-cancelled-project.gif" }, 1000); 
+    img_scorp.src = "./Media/Images/scorpion-mortalkombat-fan-remake-punch.gif";
+    setTimeout(() => {img_scorp.src = "./Media/Images/scorpion-mk-hd-sprite-cancelled-project.gif" }, 1000); 
     if (hp_atual_sub < 1){
         if (hp_atual_scorp == 100){
             main.innerHTML = `Scorpion Wins!<br><b style = "color: red">Flawless Victory</b>`;
@@ -37,9 +37,9 @@ function soco1() {
             hp_sub.style.opacity = "0";
             vida_scorp.style.opacity = "0";
             vida_sub.style.opacity = "0";
-            audio.src = "ScorpWinsFlawless.mp3";
+            audio.src = "./Media/Audio/ScorpWinsFlawless.mp3";
             audio.play();
-            id_img_winner.src = "scorpion-test-your-might-loop-fan-remake.gif";
+            id_img_winner.src = "./Media/Images/scorpion-test-your-might-loop-fan-remake.gif";
     }
         else {
             main.innerHTML = `Scorpion Wins!<br>`;
@@ -49,17 +49,17 @@ function soco1() {
             hp_sub.style.opacity = "0";
             vida_scorp.style.opacity = "0";
             vida_sub.style.opacity = "0";
-            audio.src = "ScorpionWins.mp3";
+            audio.src = "./Media/Audio/ScorpionWins.mp3";
             audio.play();
-            id_img_winner.src = "scorpion-test-your-might-loop-fan-remake.gif";
+            id_img_winner.src = "./Media/Images/scorpion-test-your-might-loop-fan-remake.gif";
         }}
 }
 
 function soco2() {
     hp_atual_scorp -= 10;
     vida_scorp.style.width = hp_atual_scorp + "%";
-    img_sub.src = "subzero-mk-hd-slide-cancelled-project.gif";
-    setTimeout(() => {img_sub.src = "subzero-mk-hd-stance-cancelled-project.gif" }, 1000);
+    img_sub.src = "./Media/Images/subzero-mk-hd-slide-cancelled-project.gif";
+    setTimeout(() => {img_sub.src = "./Media/Images/subzero-mk-hd-stance-cancelled-project.gif"}, 1100);
     if (hp_atual_scorp < 1){
         if (hp_atual_sub == 100){
             main.innerHTML = `Subzero Wins!<br><b style = "color: red">Flawless Victory</b>`;
@@ -69,9 +69,9 @@ function soco2() {
             hp_sub.style.opacity = "0";
             vida_scorp.style.opacity = "0";
             vida_sub.style.opacity = "0";
-            audio.src = "SubWinsFlawless.mp3";
+            audio.src = "./Media/Audio/SubWinsFlawless.mp3";
             audio.play();
-            id_img_winner.src = "subzeroWinsGif.gif";
+            id_img_winner.src = "./Media/Images/subzeroWinsGif.gif";
     }
         else {
             main.innerHTML = `Subzero Wins!<br>`;
@@ -81,9 +81,9 @@ function soco2() {
             hp_sub.style.opacity = "0";
             vida_scorp.style.opacity = "0";
             vida_sub.style.opacity = "0";
-            audio.src = "SubzeroWins.mp3";
+            audio.src = "./Media/Audio/SubzeroWins.mp3";
             audio.play();
-            id_img_winner.src = "subzeroWinsGif.gif"; 
+            id_img_winner.src = "./Media/Images/subzeroWinsGif.gif"; 
         }}           
 }
 
